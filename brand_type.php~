@@ -33,7 +33,7 @@ function brands(){
     'capability_type' => 'post',
     'hierarchical' => false,
     'menu_position' => 43,
-    'menu_icon' => plugins_url() . '/inventorypress/images/brand_icon.png',
+    'menu_icon' => plugins_url() . '/invpress/images/brand_icon.png',
     'supports' => array('title')
   ); 
   register_post_type('brands',$args);

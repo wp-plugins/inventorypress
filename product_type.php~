@@ -33,7 +33,7 @@ function products(){
     'capability_type' => 'post',
     'hierarchical' => false,
     'menu_position' => 42,
-    'menu_icon' => plugins_url() . '/inventorypress/images/product_icon.png',
+    'menu_icon' => plugins_url() . '/invpress/images/product_icon.png',
     'supports' => array('title')
   ); 
   register_post_type('products',$args);

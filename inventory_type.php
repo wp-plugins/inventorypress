@@ -1,26 +1,13 @@
 <?php 
 /*
 Plugin Name: InventoryPress
-Plugin URI: http://hateyourwebsite.com/inventorypress.html
+Plugin URI: http://workbold.com/wordpress-plugins/inventorypress.html
 Description: Easily Manage Your Entire Inventory Using a Small Yet Powerful Set of Custom Post Types.
 Version: v1.7
 Author: Nolan Dempster
-Author URI: http://www.hateyourwebsite.com
+Author URI: http://www.workbold.com
 License: GPL2
 */
-
-add_filter('gettext','invpress_custom_enter_title');
-function invpress_custom_enter_title( $input ) {
-
-    global $post_type;
-
-    if( is_admin() && 'Enter title here' == $input && 'inventory' == $post_type )
-        return 'Enter UPC or Inventory Control Number Here';
-
-
-    return $input;
-}
-
 
 //custom post type
 add_action('init', 'inventory');
@@ -50,13 +37,11 @@ function inventory(){
     'capability_type' => 'post',
     'hierarchical' => false,
     'menu_position' => 40,
-    'menu_icon' => plugins_url() . '/cashpress/images/inventory_icon.png',
+    'menu_icon' => plugins_url() . '/inventorypress/images/inventory_icon.png',
     'supports' => array('')
   ); 
   register_post_type('inventory',$args);
-
 }
-
 //add inventory custom post template
 
 function get_inventory_template($single_template) {
@@ -5167,15 +5152,15 @@ add_filter( "manage_edit-inventory_sortable_columns", "sortable_columns" );
 /*===================== Create Post Titles Using Meta Data=================*/
    
 
-function create_inventory_doc_title_meta($inventory_meta_title){
+function create_inventory_title_meta($inventory_meta_title){
      global $post;
     	
 	if ($post->post_type == 'inventory') {
-         $meta_data_title = $_POST['inventory_item_upc'];
+         $inventory_meta_title = $_POST['inventory_item_upc'];
      }
      return $inventory_meta_title;
 }
-add_filter('title_save_pre','create_inventory_doc_title_meta');
+add_filter('title_save_pre','create_inventory_title_meta');
 
 
 require_once('material_type.php');

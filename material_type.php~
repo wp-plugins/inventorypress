@@ -33,7 +33,7 @@ function materials(){
     'capability_type' => 'post',
     'hierarchical' => false,
     'menu_position' => 41,
-    'menu_icon' => plugins_url() . '/inventorypress/images/material_icon.png',
+    'menu_icon' => plugins_url() . '/invpress/images/material_icon.png',
     'supports' => array('title')
   ); 
   register_post_type('materials',$args);
