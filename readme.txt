@@ -31,7 +31,3 @@ This section describes how to install the plugin and get it working.
 * Initial release
 
 == Upgrade Notice ==
-
-
-`<?php code(); // goes in backticks ?>`
-
