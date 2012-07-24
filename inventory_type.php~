@@ -55,20 +55,8 @@ function inventory(){
   ); 
   register_post_type('inventory',$args);
 
+//sanitize_title( $inventory_item_part , $inventory_item_part );
 }
-
-//add inventory custom post template
-
-function get_inventory_template($single_template) {
-     global $post;
-
-     if ($post->post_type == 'inventory') {
-          $single_template = dirname( __FILE__ ) . '/themefiles/single-inventory.php';
-     }
-     return $single_template;
-}
-
-add_filter( "single_template", "get_inventory_template" ) ;
 
 // Add filter to insure the inventory is displayed when user updates a inventory
 
