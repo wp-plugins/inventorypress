@@ -31,3 +31,11 @@ This section describes how to install the plugin and get it working.
 * Initial release
 
 == Upgrade Notice ==
+
+== Screenshots ==
+
+1. Easy "backend" Administration
+2. Track data about your products better
+3. Define Common Materials
+4. Define Common Product Types
+5. Define Common Brands
