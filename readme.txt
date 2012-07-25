@@ -3,8 +3,8 @@ Contributors: Noland626
 Donate link: http://workbold.com/
 Tags: inventory, management
 Requires at least: 3.0
-Tested up to: 2.1
-Stable tag: 3.4
+Tested up to: 3.4.1
+Stable tag: 3.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
