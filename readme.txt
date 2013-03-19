@@ -28,6 +28,9 @@ This section describes how to install the plugin and get it working.
 == Changelog ==
 
 = 1.7 =
+* New Added Features
+
+= 1.0 =
 * Initial release
 
 == Upgrade Notice ==
